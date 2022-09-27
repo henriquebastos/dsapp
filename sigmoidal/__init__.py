@@ -43,7 +43,4 @@ def predict_price(user_input):
     for i in df.columns:
        print(i)
 
-    # prever o valor de venda do imovel usando XGBoost
-    y_pred = model.predict(df)
-
-    return y_pred
+    return model.predict(df)
